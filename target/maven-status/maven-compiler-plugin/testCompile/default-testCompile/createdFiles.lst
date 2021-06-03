@@ -1,0 +1,4 @@
+ar\edu\unlp\info\bd2\services\SpringDataBithubTestCase.class
+ar\edu\unlp\info\bd2\services\MongoDBBithubServiceTestCase.class
+ar\edu\unlp\info\bd2\services\HibernateBithubTestCase.class
+ar\edu\unlp\info\bd2\services\BithubServiceTestCase.class

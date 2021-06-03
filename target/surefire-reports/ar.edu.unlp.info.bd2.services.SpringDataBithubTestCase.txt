@@ -1,0 +1,12 @@
+-------------------------------------------------------------------------------
+Test set: ar.edu.unlp.info.bd2.services.SpringDataBithubTestCase
+-------------------------------------------------------------------------------
+Tests run: 6, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 6.525 sec <<< FAILURE! - in ar.edu.unlp.info.bd2.services.SpringDataBithubTestCase
+testUsersThatCommitedInBranch  Time elapsed: 0.093 sec  <<< ERROR!
+org.springframework.dao.DataIntegrityViolationException: could not execute statement; SQL [n/a]; constraint [UK_ls7afag4402w8c7l3uq6ca3ps]; nested exception is org.hibernate.exception.ConstraintViolationException: could not execute statement
+	at ar.edu.unlp.info.bd2.services.BithubServiceTestCase.testUsersThatCommitedInBranch(BithubServiceTestCase.java:235)
+Caused by: org.hibernate.exception.ConstraintViolationException: could not execute statement
+	at ar.edu.unlp.info.bd2.services.BithubServiceTestCase.testUsersThatCommitedInBranch(BithubServiceTestCase.java:235)
+Caused by: com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Duplicate entry '9' for key 'UK_ls7afag4402w8c7l3uq6ca3ps'
+	at ar.edu.unlp.info.bd2.services.BithubServiceTestCase.testUsersThatCommitedInBranch(BithubServiceTestCase.java:235)
+

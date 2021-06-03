@@ -1,0 +1,1592 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="ar.edu.unlp.info.bd2.services.HibernateBithubTestCase" time="29.265" tests="6" errors="6" skipped="0" failures="0">
+  <properties>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0_201\jre\bin"/>
+    <property name="java.vm.version" value="25.201-b09"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="maven.multiModuleProjectDirectory" value="C:/Users/emanu/Documents/bithub-g13"/>
+    <property name="java.vendor.url" value="http://java.oracle.com/"/>
+    <property name="path.separator" value=";"/>
+    <property name="guice.disable.misplaced.annotation.check" value="true"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="user.script" value=""/>
+    <property name="user.country" value="419"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="user.dir" value="C:\Users\emanu\Documents\bithub-g13"/>
+    <property name="java.runtime.version" value="1.8.0_201-b09"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
+    <property name="java.endorsed.dirs" value="C:\Program Files\Java\jdk1.8.0_201\jre\lib\endorsed"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.io.tmpdir" value="C:\Users\emanu\AppData\Local\Temp\"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.variant" value=""/>
+    <property name="os.name" value="Windows 10"/>
+    <property name="classworlds.conf" value="C:/Users/emanu/Documents/BBDD2/apache-maven-3.5.0-bin/apache-maven-3.5.0/bin/m2.conf"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk1.8.0_201\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Users\emanu\bin;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\local\bin;C:\Program Files\Git\usr\bin;C:\Program Files\Git\usr\bin;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\bin;C:\Users\emanu\bin;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0;C:\Windows\System32\OpenSSH;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\xampp\php;C:\ProgramData\ComposerSetup\bin;C:\Users\emanu\Documents\BBDD2\apache-maven-3.5.0-bin\apache-maven-3.5.0\bin;D:\Git\cmd;C:\Program Files\Git\cmd;C:\Users\emanu\AppData\Local\Microsoft\WindowsApps;C:\Users\emanu\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\emanu\AppData\Roaming\Composer\vendor\bin;C:\Program Files\JetBrains\IntelliJ IDEA 2019.1\bin;C:\Program Files\Git\usr\bin\vendor_perl;C:\Program Files\Git\usr\bin\core_perl;."/>
+    <property name="maven.conf" value="C:/Users/emanu/Documents/BBDD2/apache-maven-3.5.0-bin/apache-maven-3.5.0/conf"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.class.version" value="52.0"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="os.version" value="10.0"/>
+    <property name="library.jansi.path" value="C:\Users\emanu\Documents\BBDD2\apache-maven-3.5.0-bin\apache-maven-3.5.0\lib\jansi-native\windows64"/>
+    <property name="user.home" value="C:\Users\emanu"/>
+    <property name="user.timezone" value="America/Buenos_Aires"/>
+    <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob"/>
+    <property name="java.specification.version" value="1.8"/>
+    <property name="file.encoding" value="Cp1252"/>
+    <property name="user.name" value="PC GAMING"/>
+    <property name="java.class.path" value="C:/Users/emanu/Documents/BBDD2/apache-maven-3.5.0-bin/apache-maven-3.5.0/boot/plexus-classworlds-2.5.2.jar"/>
+    <property name="java.vm.specification.version" value="1.8"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.home" value="C:\Program Files\Java\jdk1.8.0_201\jre"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher clean install"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.language" value="es"/>
+    <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.version" value="1.8.0_201"/>
+    <property name="java.ext.dirs" value="C:\Program Files\Java\jdk1.8.0_201\jre\lib\ext;C:\Windows\Sun\Java\lib\ext"/>
+    <property name="sun.boot.class.path" value="C:\Program Files\Java\jdk1.8.0_201\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_201\jre\lib\rt.jar;C:\Program Files\Java\jdk1.8.0_201\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.8.0_201\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_201\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_201\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_201\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_201\jre\classes"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="maven.home" value="C:\Users\emanu\Documents\BBDD2\apache-maven-3.5.0-bin\apache-maven-3.5.0"/>
+    <property name="file.separator" value="\"/>
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="sun.desktop" value="windows"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+  </properties>
+  <testcase name="testCreateReview" classname="ar.edu.unlp.info.bd2.services.HibernateBithubTestCase" time="0.031">
+    <error message="Failed to load ApplicationContext" type="java.lang.IllegalStateException">java.lang.IllegalStateException: Failed to load ApplicationContext
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'hibernateService' defined in ar.edu.unlp.info.bd2.config.HibernateConfiguration: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [ar.edu.unlp.info.bd2.services.BithubService]: Factory method 'hibernateService' threw exception; nested exception is java.lang.IllegalStateException: @Bean method HibernateConfiguration.createRepository called as bean reference for type [ar.edu.unlp.info.bd2.repositories.HibernateBithubRepository] but overridden by non-compatible bean instance of type [com.sun.proxy.$Proxy46]. Overriding bean of same name declared in: ar.edu.unlp.info.bd2.config.HibernateConfiguration
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [ar.edu.unlp.info.bd2.services.BithubService]: Factory method 'hibernateService' threw exception; nested exception is java.lang.IllegalStateException: @Bean method HibernateConfiguration.createRepository called as bean reference for type [ar.edu.unlp.info.bd2.repositories.HibernateBithubRepository] but overridden by non-compatible bean instance of type [com.sun.proxy.$Proxy46]. Overriding bean of same name declared in: ar.edu.unlp.info.bd2.config.HibernateConfiguration
+Caused by: java.lang.IllegalStateException: @Bean method HibernateConfiguration.createRepository called as bean reference for type [ar.edu.unlp.info.bd2.repositories.HibernateBithubRepository] but overridden by non-compatible bean instance of type [com.sun.proxy.$Proxy46]. Overriding bean of same name declared in: ar.edu.unlp.info.bd2.config.HibernateConfiguration
+</error>
+    <system-out><![CDATA[Hibernate: 
+    
+    alter table Commit 
+       drop 
+       foreign key FK1yo3fl6me7ttfnbb2b6fuiro
+Hibernate: 
+    
+    alter table Commit 
+       drop 
+       foreign key FKkakjjvq54uid1mbwxkpqgfo1h
+Hibernate: 
+    
+    alter table Commit_File 
+       drop 
+       foreign key FK5bktr2h3jhqtdti8lnib2jga9
+Hibernate: 
+    
+    alter table Commit_File 
+       drop 
+       foreign key FK6gdqnp1613irqiwnma4rg6glw
+Hibernate: 
+    
+    alter table FileReview 
+       drop 
+       foreign key FKrg9sbt9lspdg20vaohwpn78ng
+Hibernate: 
+    
+    alter table FileReview 
+       drop 
+       foreign key FKqljnajx6rrdr2n7fu5crnsqh0
+Hibernate: 
+    
+    alter table Review 
+       drop 
+       foreign key FK7rbnplhy7oaulxrkp8cqeablj
+Hibernate: 
+    
+    alter table Review 
+       drop 
+       foreign key FK32wkapjkt9btb8hltm215d54g
+Hibernate: 
+    
+    alter table Review_FileReview 
+       drop 
+       foreign key FKht9uruqpo9qc4garca1hpxrk4
+Hibernate: 
+    
+    alter table Review_FileReview 
+       drop 
+       foreign key FK1631fwvonh2g6vh2ek5pn8kjh
+Hibernate: 
+    
+    alter table Tag 
+       drop 
+       foreign key FKam2m3lciyt0weg8k2ty8ygm3g
+Hibernate: 
+    
+    drop table if exists Branch
+Hibernate: 
+    
+    drop table if exists Commit
+Hibernate: 
+    
+    drop table if exists Commit_File
+Hibernate: 
+    
+    drop table if exists File
+Hibernate: 
+    
+    drop table if exists FileReview
+Hibernate: 
+    
+    drop table if exists Review
+Hibernate: 
+    
+    drop table if exists Review_FileReview
+Hibernate: 
+    
+    drop table if exists Tag
+Hibernate: 
+    
+    drop table if exists User
+Hibernate: 
+    
+    create table Branch (
+       id bigint not null auto_increment,
+        objectId tinyblob,
+        name varchar(255),
+        primary key (id)
+    ) engine=InnoDB
+Hibernate: 
+    
+    create table Commit (
+       id bigint not null auto_increment,
+        objectId tinyblob,
+        hash varchar(255),
+        message varchar(255),
+        author_id bigint,
+        branch_id bigint,
+        primary key (id)
+    ) engine=InnoDB
+Hibernate: 
+    
+    create table Commit_File (
+       Commit_id bigint not null,
+        files_id bigint not null
+    ) engine=InnoDB
+Hibernate: 
+    
+    create table File (
+       id bigint not null auto_increment,
+        objectId tinyblob,
+        content varchar(255),
+        filename varchar(255),
+        primary key (id)
+    ) engine=InnoDB
+Hibernate: 
+    
+    create table FileReview (
+       id bigint not null auto_increment,
+        objectId tinyblob,
+        comment varchar(255),
+        lineNumber integer,
+        file_id bigint not null,
+        review_id bigint not null,
+        primary key (id)
+    ) engine=InnoDB
+Hibernate: 
+    
+    create table Review (
+       id bigint not null auto_increment,
+        objectId tinyblob,
+        branch_id bigint,
+        user_id bigint,
+        primary key (id)
+    ) engine=InnoDB
+Hibernate: 
+    
+    create table Review_FileReview (
+       Review_id bigint not null,
+        fileReviewList_id bigint not null
+    ) engine=InnoDB
+Hibernate: 
+    
+    create table Tag (
+       id bigint not null auto_increment,
+        objectId tinyblob,
+        commitHash varchar(255),
+        name varchar(255),
+        commit_id bigint,
+        primary key (id)
+    ) engine=InnoDB
+Hibernate: 
+    
+    create table User (
+       id bigint not null auto_increment,
+        objectId tinyblob,
+        email varchar(255),
+        name varchar(255),
+        primary key (id)
+    ) engine=InnoDB
+Hibernate: 
+    
+    alter table Commit_File 
+       add constraint UK_ls7afag4402w8c7l3uq6ca3ps unique (files_id)
+Hibernate: 
+    
+    alter table FileReview 
+       add constraint UK_hhpi8lsmo3cmrj8vwt9fvqv7i unique (file_id)
+Hibernate: 
+    
+    alter table FileReview 
+       add constraint UK_18mw1t9pln7hk2dj7taco38wr unique (review_id)
+Hibernate: 
+    
+    alter table Review_FileReview 
+       add constraint UK_eoi1iwbms9k42u4gvbenmn3tf unique (fileReviewList_id)
+Hibernate: 
+    
+    alter table Commit 
+       add constraint FK1yo3fl6me7ttfnbb2b6fuiro 
+       foreign key (author_id) 
+       references User (id)
+Hibernate: 
+    
+    alter table Commit 
+       add constraint FKkakjjvq54uid1mbwxkpqgfo1h 
+       foreign key (branch_id) 
+       references Branch (id)
+Hibernate: 
+    
+    alter table Commit_File 
+       add constraint FK5bktr2h3jhqtdti8lnib2jga9 
+       foreign key (files_id) 
+       references File (id)
+Hibernate: 
+    
+    alter table Commit_File 
+       add constraint FK6gdqnp1613irqiwnma4rg6glw 
+       foreign key (Commit_id) 
+       references Commit (id)
+Hibernate: 
+    
+    alter table FileReview 
+       add constraint FKrg9sbt9lspdg20vaohwpn78ng 
+       foreign key (file_id) 
+       references File (id)
+Hibernate: 
+    
+    alter table FileReview 
+       add constraint FKqljnajx6rrdr2n7fu5crnsqh0 
+       foreign key (review_id) 
+       references Review (id)
+Hibernate: 
+    
+    alter table Review 
+       add constraint FK7rbnplhy7oaulxrkp8cqeablj 
+       foreign key (branch_id) 
+       references Branch (id)
+Hibernate: 
+    
+    alter table Review 
+       add constraint FK32wkapjkt9btb8hltm215d54g 
+       foreign key (user_id) 
+       references User (id)
+Hibernate: 
+    
+    alter table Review_FileReview 
+       add constraint FKht9uruqpo9qc4garca1hpxrk4 
+       foreign key (fileReviewList_id) 
+       references FileReview (id)
+Hibernate: 
+    
+    alter table Review_FileReview 
+       add constraint FK1631fwvonh2g6vh2ek5pn8kjh 
+       foreign key (Review_id) 
+       references Review (id)
+Hibernate: 
+    
+    alter table Tag 
+       add constraint FKam2m3lciyt0weg8k2ty8ygm3g 
+       foreign key (commit_id) 
+       references Commit (id)
+]]></system-out>
+    <system-err><![CDATA[SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+Fri Jun 28 14:19:44 ART 2019 WARN: Establishing SSL connection without server's identity verification is not recommended. According to MySQL 5.5.45+, 5.6.26+ and 5.7.6+ requirements SSL connection must be established by default if explicit option isn't set. For compliance with existing applications not using SSL the verifyServerCertificate property is set to 'false'. You need either to explicitly disable SSL by setting useSSL=false, or set useSSL=true and provide truststore for server certificate verification.
+Fri Jun 28 14:19:44 ART 2019 WARN: Establishing SSL connection without server's identity verification is not recommended. According to MySQL 5.5.45+, 5.6.26+ and 5.7.6+ requirements SSL connection must be established by default if explicit option isn't set. For compliance with existing applications not using SSL the verifyServerCertificate property is set to 'false'. You need either to explicitly disable SSL by setting useSSL=false, or set useSSL=true and provide truststore for server certificate verification.
+]]></system-err>
+  </testcase>
+  <testcase name="testCreateBranchAndCommit" classname="ar.edu.unlp.info.bd2.services.HibernateBithubTestCase" time="0.004">
+    <error message="Failed to load ApplicationContext" type="java.lang.IllegalStateException">java.lang.IllegalStateException: Failed to load ApplicationContext
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'hibernateService' defined in ar.edu.unlp.info.bd2.config.HibernateConfiguration: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [ar.edu.unlp.info.bd2.services.BithubService]: Factory method 'hibernateService' threw exception; nested exception is java.lang.IllegalStateException: @Bean method HibernateConfiguration.createRepository called as bean reference for type [ar.edu.unlp.info.bd2.repositories.HibernateBithubRepository] but overridden by non-compatible bean instance of type [com.sun.proxy.$Proxy46]. Overriding bean of same name declared in: ar.edu.unlp.info.bd2.config.HibernateConfiguration
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [ar.edu.unlp.info.bd2.services.BithubService]: Factory method 'hibernateService' threw exception; nested exception is java.lang.IllegalStateException: @Bean method HibernateConfiguration.createRepository called as bean reference for type [ar.edu.unlp.info.bd2.repositories.HibernateBithubRepository] but overridden by non-compatible bean instance of type [com.sun.proxy.$Proxy46]. Overriding bean of same name declared in: ar.edu.unlp.info.bd2.config.HibernateConfiguration
+Caused by: java.lang.IllegalStateException: @Bean method HibernateConfiguration.createRepository called as bean reference for type [ar.edu.unlp.info.bd2.repositories.HibernateBithubRepository] but overridden by non-compatible bean instance of type [com.sun.proxy.$Proxy46]. Overriding bean of same name declared in: ar.edu.unlp.info.bd2.config.HibernateConfiguration
+</error>
+    <system-out><![CDATA[Hibernate: 
+    
+    alter table Commit 
+       drop 
+       foreign key FK1yo3fl6me7ttfnbb2b6fuiro
+Hibernate: 
+    
+    alter table Commit 
+       drop 
+       foreign key FKkakjjvq54uid1mbwxkpqgfo1h
+Hibernate: 
+    
+    alter table Commit_File 
+       drop 
+       foreign key FK5bktr2h3jhqtdti8lnib2jga9
+Hibernate: 
+    
+    alter table Commit_File 
+       drop 
+       foreign key FK6gdqnp1613irqiwnma4rg6glw
+Hibernate: 
+    
+    alter table FileReview 
+       drop 
+       foreign key FKrg9sbt9lspdg20vaohwpn78ng
+Hibernate: 
+    
+    alter table FileReview 
+       drop 
+       foreign key FKqljnajx6rrdr2n7fu5crnsqh0
+Hibernate: 
+    
+    alter table Review 
+       drop 
+       foreign key FK7rbnplhy7oaulxrkp8cqeablj
+Hibernate: 
+    
+    alter table Review 
+       drop 
+       foreign key FK32wkapjkt9btb8hltm215d54g
+Hibernate: 
+    
+    alter table Review_FileReview 
+       drop 
+       foreign key FKht9uruqpo9qc4garca1hpxrk4
+Hibernate: 
+    
+    alter table Review_FileReview 
+       drop 
+       foreign key FK1631fwvonh2g6vh2ek5pn8kjh
+Hibernate: 
+    
+    alter table Tag 
+       drop 
+       foreign key FKam2m3lciyt0weg8k2ty8ygm3g
+Hibernate: 
+    
+    drop table if exists Branch
+Hibernate: 
+    
+    drop table if exists Commit
+Hibernate: 
+    
+    drop table if exists Commit_File
+Hibernate: 
+    
+    drop table if exists File
+Hibernate: 
+    
+    drop table if exists FileReview
+Hibernate: 
+    
+    drop table if exists Review
+Hibernate: 
+    
+    drop table if exists Review_FileReview
+Hibernate: 
+    
+    drop table if exists Tag
+Hibernate: 
+    
+    drop table if exists User
+Hibernate: 
+    
+    create table Branch (
+       id bigint not null auto_increment,
+        objectId tinyblob,
+        name varchar(255),
+        primary key (id)
+    ) engine=InnoDB
+Hibernate: 
+    
+    create table Commit (
+       id bigint not null auto_increment,
+        objectId tinyblob,
+        hash varchar(255),
+        message varchar(255),
+        author_id bigint,
+        branch_id bigint,
+        primary key (id)
+    ) engine=InnoDB
+Hibernate: 
+    
+    create table Commit_File (
+       Commit_id bigint not null,
+        files_id bigint not null
+    ) engine=InnoDB
+Hibernate: 
+    
+    create table File (
+       id bigint not null auto_increment,
+        objectId tinyblob,
+        content varchar(255),
+        filename varchar(255),
+        primary key (id)
+    ) engine=InnoDB
+Hibernate: 
+    
+    create table FileReview (
+       id bigint not null auto_increment,
+        objectId tinyblob,
+        comment varchar(255),
+        lineNumber integer,
+        file_id bigint not null,
+        review_id bigint not null,
+        primary key (id)
+    ) engine=InnoDB
+Hibernate: 
+    
+    create table Review (
+       id bigint not null auto_increment,
+        objectId tinyblob,
+        branch_id bigint,
+        user_id bigint,
+        primary key (id)
+    ) engine=InnoDB
+Hibernate: 
+    
+    create table Review_FileReview (
+       Review_id bigint not null,
+        fileReviewList_id bigint not null
+    ) engine=InnoDB
+Hibernate: 
+    
+    create table Tag (
+       id bigint not null auto_increment,
+        objectId tinyblob,
+        commitHash varchar(255),
+        name varchar(255),
+        commit_id bigint,
+        primary key (id)
+    ) engine=InnoDB
+Hibernate: 
+    
+    create table User (
+       id bigint not null auto_increment,
+        objectId tinyblob,
+        email varchar(255),
+        name varchar(255),
+        primary key (id)
+    ) engine=InnoDB
+Hibernate: 
+    
+    alter table Commit_File 
+       add constraint UK_ls7afag4402w8c7l3uq6ca3ps unique (files_id)
+Hibernate: 
+    
+    alter table FileReview 
+       add constraint UK_hhpi8lsmo3cmrj8vwt9fvqv7i unique (file_id)
+Hibernate: 
+    
+    alter table FileReview 
+       add constraint UK_18mw1t9pln7hk2dj7taco38wr unique (review_id)
+Hibernate: 
+    
+    alter table Review_FileReview 
+       add constraint UK_eoi1iwbms9k42u4gvbenmn3tf unique (fileReviewList_id)
+Hibernate: 
+    
+    alter table Commit 
+       add constraint FK1yo3fl6me7ttfnbb2b6fuiro 
+       foreign key (author_id) 
+       references User (id)
+Hibernate: 
+    
+    alter table Commit 
+       add constraint FKkakjjvq54uid1mbwxkpqgfo1h 
+       foreign key (branch_id) 
+       references Branch (id)
+Hibernate: 
+    
+    alter table Commit_File 
+       add constraint FK5bktr2h3jhqtdti8lnib2jga9 
+       foreign key (files_id) 
+       references File (id)
+Hibernate: 
+    
+    alter table Commit_File 
+       add constraint FK6gdqnp1613irqiwnma4rg6glw 
+       foreign key (Commit_id) 
+       references Commit (id)
+Hibernate: 
+    
+    alter table FileReview 
+       add constraint FKrg9sbt9lspdg20vaohwpn78ng 
+       foreign key (file_id) 
+       references File (id)
+Hibernate: 
+    
+    alter table FileReview 
+       add constraint FKqljnajx6rrdr2n7fu5crnsqh0 
+       foreign key (review_id) 
+       references Review (id)
+Hibernate: 
+    
+    alter table Review 
+       add constraint FK7rbnplhy7oaulxrkp8cqeablj 
+       foreign key (branch_id) 
+       references Branch (id)
+Hibernate: 
+    
+    alter table Review 
+       add constraint FK32wkapjkt9btb8hltm215d54g 
+       foreign key (user_id) 
+       references User (id)
+Hibernate: 
+    
+    alter table Review_FileReview 
+       add constraint FKht9uruqpo9qc4garca1hpxrk4 
+       foreign key (fileReviewList_id) 
+       references FileReview (id)
+Hibernate: 
+    
+    alter table Review_FileReview 
+       add constraint FK1631fwvonh2g6vh2ek5pn8kjh 
+       foreign key (Review_id) 
+       references Review (id)
+Hibernate: 
+    
+    alter table Tag 
+       add constraint FKam2m3lciyt0weg8k2ty8ygm3g 
+       foreign key (commit_id) 
+       references Commit (id)
+]]></system-out>
+    <system-err><![CDATA[Fri Jun 28 14:19:51 ART 2019 WARN: Establishing SSL connection without server's identity verification is not recommended. According to MySQL 5.5.45+, 5.6.26+ and 5.7.6+ requirements SSL connection must be established by default if explicit option isn't set. For compliance with existing applications not using SSL the verifyServerCertificate property is set to 'false'. You need either to explicitly disable SSL by setting useSSL=false, or set useSSL=true and provide truststore for server certificate verification.
+Fri Jun 28 14:19:51 ART 2019 WARN: Establishing SSL connection without server's identity verification is not recommended. According to MySQL 5.5.45+, 5.6.26+ and 5.7.6+ requirements SSL connection must be established by default if explicit option isn't set. For compliance with existing applications not using SSL the verifyServerCertificate property is set to 'false'. You need either to explicitly disable SSL by setting useSSL=false, or set useSSL=true and provide truststore for server certificate verification.
+]]></system-err>
+  </testcase>
+  <testcase name="testGetCommitsFromUser" classname="ar.edu.unlp.info.bd2.services.HibernateBithubTestCase" time="0.005">
+    <error message="Failed to load ApplicationContext" type="java.lang.IllegalStateException">java.lang.IllegalStateException: Failed to load ApplicationContext
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'hibernateService' defined in ar.edu.unlp.info.bd2.config.HibernateConfiguration: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [ar.edu.unlp.info.bd2.services.BithubService]: Factory method 'hibernateService' threw exception; nested exception is java.lang.IllegalStateException: @Bean method HibernateConfiguration.createRepository called as bean reference for type [ar.edu.unlp.info.bd2.repositories.HibernateBithubRepository] but overridden by non-compatible bean instance of type [com.sun.proxy.$Proxy46]. Overriding bean of same name declared in: ar.edu.unlp.info.bd2.config.HibernateConfiguration
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [ar.edu.unlp.info.bd2.services.BithubService]: Factory method 'hibernateService' threw exception; nested exception is java.lang.IllegalStateException: @Bean method HibernateConfiguration.createRepository called as bean reference for type [ar.edu.unlp.info.bd2.repositories.HibernateBithubRepository] but overridden by non-compatible bean instance of type [com.sun.proxy.$Proxy46]. Overriding bean of same name declared in: ar.edu.unlp.info.bd2.config.HibernateConfiguration
+Caused by: java.lang.IllegalStateException: @Bean method HibernateConfiguration.createRepository called as bean reference for type [ar.edu.unlp.info.bd2.repositories.HibernateBithubRepository] but overridden by non-compatible bean instance of type [com.sun.proxy.$Proxy46]. Overriding bean of same name declared in: ar.edu.unlp.info.bd2.config.HibernateConfiguration
+</error>
+    <system-out><![CDATA[Hibernate: 
+    
+    alter table Commit 
+       drop 
+       foreign key FK1yo3fl6me7ttfnbb2b6fuiro
+Hibernate: 
+    
+    alter table Commit 
+       drop 
+       foreign key FKkakjjvq54uid1mbwxkpqgfo1h
+Hibernate: 
+    
+    alter table Commit_File 
+       drop 
+       foreign key FK5bktr2h3jhqtdti8lnib2jga9
+Hibernate: 
+    
+    alter table Commit_File 
+       drop 
+       foreign key FK6gdqnp1613irqiwnma4rg6glw
+Hibernate: 
+    
+    alter table FileReview 
+       drop 
+       foreign key FKrg9sbt9lspdg20vaohwpn78ng
+Hibernate: 
+    
+    alter table FileReview 
+       drop 
+       foreign key FKqljnajx6rrdr2n7fu5crnsqh0
+Hibernate: 
+    
+    alter table Review 
+       drop 
+       foreign key FK7rbnplhy7oaulxrkp8cqeablj
+Hibernate: 
+    
+    alter table Review 
+       drop 
+       foreign key FK32wkapjkt9btb8hltm215d54g
+Hibernate: 
+    
+    alter table Review_FileReview 
+       drop 
+       foreign key FKht9uruqpo9qc4garca1hpxrk4
+Hibernate: 
+    
+    alter table Review_FileReview 
+       drop 
+       foreign key FK1631fwvonh2g6vh2ek5pn8kjh
+Hibernate: 
+    
+    alter table Tag 
+       drop 
+       foreign key FKam2m3lciyt0weg8k2ty8ygm3g
+Hibernate: 
+    
+    drop table if exists Branch
+Hibernate: 
+    
+    drop table if exists Commit
+Hibernate: 
+    
+    drop table if exists Commit_File
+Hibernate: 
+    
+    drop table if exists File
+Hibernate: 
+    
+    drop table if exists FileReview
+Hibernate: 
+    
+    drop table if exists Review
+Hibernate: 
+    
+    drop table if exists Review_FileReview
+Hibernate: 
+    
+    drop table if exists Tag
+Hibernate: 
+    
+    drop table if exists User
+Hibernate: 
+    
+    create table Branch (
+       id bigint not null auto_increment,
+        objectId tinyblob,
+        name varchar(255),
+        primary key (id)
+    ) engine=InnoDB
+Hibernate: 
+    
+    create table Commit (
+       id bigint not null auto_increment,
+        objectId tinyblob,
+        hash varchar(255),
+        message varchar(255),
+        author_id bigint,
+        branch_id bigint,
+        primary key (id)
+    ) engine=InnoDB
+Hibernate: 
+    
+    create table Commit_File (
+       Commit_id bigint not null,
+        files_id bigint not null
+    ) engine=InnoDB
+Hibernate: 
+    
+    create table File (
+       id bigint not null auto_increment,
+        objectId tinyblob,
+        content varchar(255),
+        filename varchar(255),
+        primary key (id)
+    ) engine=InnoDB
+Hibernate: 
+    
+    create table FileReview (
+       id bigint not null auto_increment,
+        objectId tinyblob,
+        comment varchar(255),
+        lineNumber integer,
+        file_id bigint not null,
+        review_id bigint not null,
+        primary key (id)
+    ) engine=InnoDB
+Hibernate: 
+    
+    create table Review (
+       id bigint not null auto_increment,
+        objectId tinyblob,
+        branch_id bigint,
+        user_id bigint,
+        primary key (id)
+    ) engine=InnoDB
+Hibernate: 
+    
+    create table Review_FileReview (
+       Review_id bigint not null,
+        fileReviewList_id bigint not null
+    ) engine=InnoDB
+Hibernate: 
+    
+    create table Tag (
+       id bigint not null auto_increment,
+        objectId tinyblob,
+        commitHash varchar(255),
+        name varchar(255),
+        commit_id bigint,
+        primary key (id)
+    ) engine=InnoDB
+Hibernate: 
+    
+    create table User (
+       id bigint not null auto_increment,
+        objectId tinyblob,
+        email varchar(255),
+        name varchar(255),
+        primary key (id)
+    ) engine=InnoDB
+Hibernate: 
+    
+    alter table Commit_File 
+       add constraint UK_ls7afag4402w8c7l3uq6ca3ps unique (files_id)
+Hibernate: 
+    
+    alter table FileReview 
+       add constraint UK_hhpi8lsmo3cmrj8vwt9fvqv7i unique (file_id)
+Hibernate: 
+    
+    alter table FileReview 
+       add constraint UK_18mw1t9pln7hk2dj7taco38wr unique (review_id)
+Hibernate: 
+    
+    alter table Review_FileReview 
+       add constraint UK_eoi1iwbms9k42u4gvbenmn3tf unique (fileReviewList_id)
+Hibernate: 
+    
+    alter table Commit 
+       add constraint FK1yo3fl6me7ttfnbb2b6fuiro 
+       foreign key (author_id) 
+       references User (id)
+Hibernate: 
+    
+    alter table Commit 
+       add constraint FKkakjjvq54uid1mbwxkpqgfo1h 
+       foreign key (branch_id) 
+       references Branch (id)
+Hibernate: 
+    
+    alter table Commit_File 
+       add constraint FK5bktr2h3jhqtdti8lnib2jga9 
+       foreign key (files_id) 
+       references File (id)
+Hibernate: 
+    
+    alter table Commit_File 
+       add constraint FK6gdqnp1613irqiwnma4rg6glw 
+       foreign key (Commit_id) 
+       references Commit (id)
+Hibernate: 
+    
+    alter table FileReview 
+       add constraint FKrg9sbt9lspdg20vaohwpn78ng 
+       foreign key (file_id) 
+       references File (id)
+Hibernate: 
+    
+    alter table FileReview 
+       add constraint FKqljnajx6rrdr2n7fu5crnsqh0 
+       foreign key (review_id) 
+       references Review (id)
+Hibernate: 
+    
+    alter table Review 
+       add constraint FK7rbnplhy7oaulxrkp8cqeablj 
+       foreign key (branch_id) 
+       references Branch (id)
+Hibernate: 
+    
+    alter table Review 
+       add constraint FK32wkapjkt9btb8hltm215d54g 
+       foreign key (user_id) 
+       references User (id)
+Hibernate: 
+    
+    alter table Review_FileReview 
+       add constraint FKht9uruqpo9qc4garca1hpxrk4 
+       foreign key (fileReviewList_id) 
+       references FileReview (id)
+Hibernate: 
+    
+    alter table Review_FileReview 
+       add constraint FK1631fwvonh2g6vh2ek5pn8kjh 
+       foreign key (Review_id) 
+       references Review (id)
+Hibernate: 
+    
+    alter table Tag 
+       add constraint FKam2m3lciyt0weg8k2ty8ygm3g 
+       foreign key (commit_id) 
+       references Commit (id)
+]]></system-out>
+    <system-err><![CDATA[Fri Jun 28 14:19:55 ART 2019 WARN: Establishing SSL connection without server's identity verification is not recommended. According to MySQL 5.5.45+, 5.6.26+ and 5.7.6+ requirements SSL connection must be established by default if explicit option isn't set. For compliance with existing applications not using SSL the verifyServerCertificate property is set to 'false'. You need either to explicitly disable SSL by setting useSSL=false, or set useSSL=true and provide truststore for server certificate verification.
+Fri Jun 28 14:19:55 ART 2019 WARN: Establishing SSL connection without server's identity verification is not recommended. According to MySQL 5.5.45+, 5.6.26+ and 5.7.6+ requirements SSL connection must be established by default if explicit option isn't set. For compliance with existing applications not using SSL the verifyServerCertificate property is set to 'false'. You need either to explicitly disable SSL by setting useSSL=false, or set useSSL=true and provide truststore for server certificate verification.
+]]></system-err>
+  </testcase>
+  <testcase name="testUsersThatCommitedInBranch" classname="ar.edu.unlp.info.bd2.services.HibernateBithubTestCase" time="0.004">
+    <error message="Failed to load ApplicationContext" type="java.lang.IllegalStateException">java.lang.IllegalStateException: Failed to load ApplicationContext
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'hibernateService' defined in ar.edu.unlp.info.bd2.config.HibernateConfiguration: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [ar.edu.unlp.info.bd2.services.BithubService]: Factory method 'hibernateService' threw exception; nested exception is java.lang.IllegalStateException: @Bean method HibernateConfiguration.createRepository called as bean reference for type [ar.edu.unlp.info.bd2.repositories.HibernateBithubRepository] but overridden by non-compatible bean instance of type [com.sun.proxy.$Proxy46]. Overriding bean of same name declared in: ar.edu.unlp.info.bd2.config.HibernateConfiguration
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [ar.edu.unlp.info.bd2.services.BithubService]: Factory method 'hibernateService' threw exception; nested exception is java.lang.IllegalStateException: @Bean method HibernateConfiguration.createRepository called as bean reference for type [ar.edu.unlp.info.bd2.repositories.HibernateBithubRepository] but overridden by non-compatible bean instance of type [com.sun.proxy.$Proxy46]. Overriding bean of same name declared in: ar.edu.unlp.info.bd2.config.HibernateConfiguration
+Caused by: java.lang.IllegalStateException: @Bean method HibernateConfiguration.createRepository called as bean reference for type [ar.edu.unlp.info.bd2.repositories.HibernateBithubRepository] but overridden by non-compatible bean instance of type [com.sun.proxy.$Proxy46]. Overriding bean of same name declared in: ar.edu.unlp.info.bd2.config.HibernateConfiguration
+</error>
+    <system-out><![CDATA[Hibernate: 
+    
+    alter table Commit 
+       drop 
+       foreign key FK1yo3fl6me7ttfnbb2b6fuiro
+Hibernate: 
+    
+    alter table Commit 
+       drop 
+       foreign key FKkakjjvq54uid1mbwxkpqgfo1h
+Hibernate: 
+    
+    alter table Commit_File 
+       drop 
+       foreign key FK5bktr2h3jhqtdti8lnib2jga9
+Hibernate: 
+    
+    alter table Commit_File 
+       drop 
+       foreign key FK6gdqnp1613irqiwnma4rg6glw
+Hibernate: 
+    
+    alter table FileReview 
+       drop 
+       foreign key FKrg9sbt9lspdg20vaohwpn78ng
+Hibernate: 
+    
+    alter table FileReview 
+       drop 
+       foreign key FKqljnajx6rrdr2n7fu5crnsqh0
+Hibernate: 
+    
+    alter table Review 
+       drop 
+       foreign key FK7rbnplhy7oaulxrkp8cqeablj
+Hibernate: 
+    
+    alter table Review 
+       drop 
+       foreign key FK32wkapjkt9btb8hltm215d54g
+Hibernate: 
+    
+    alter table Review_FileReview 
+       drop 
+       foreign key FKht9uruqpo9qc4garca1hpxrk4
+Hibernate: 
+    
+    alter table Review_FileReview 
+       drop 
+       foreign key FK1631fwvonh2g6vh2ek5pn8kjh
+Hibernate: 
+    
+    alter table Tag 
+       drop 
+       foreign key FKam2m3lciyt0weg8k2ty8ygm3g
+Hibernate: 
+    
+    drop table if exists Branch
+Hibernate: 
+    
+    drop table if exists Commit
+Hibernate: 
+    
+    drop table if exists Commit_File
+Hibernate: 
+    
+    drop table if exists File
+Hibernate: 
+    
+    drop table if exists FileReview
+Hibernate: 
+    
+    drop table if exists Review
+Hibernate: 
+    
+    drop table if exists Review_FileReview
+Hibernate: 
+    
+    drop table if exists Tag
+Hibernate: 
+    
+    drop table if exists User
+Hibernate: 
+    
+    create table Branch (
+       id bigint not null auto_increment,
+        objectId tinyblob,
+        name varchar(255),
+        primary key (id)
+    ) engine=InnoDB
+Hibernate: 
+    
+    create table Commit (
+       id bigint not null auto_increment,
+        objectId tinyblob,
+        hash varchar(255),
+        message varchar(255),
+        author_id bigint,
+        branch_id bigint,
+        primary key (id)
+    ) engine=InnoDB
+Hibernate: 
+    
+    create table Commit_File (
+       Commit_id bigint not null,
+        files_id bigint not null
+    ) engine=InnoDB
+Hibernate: 
+    
+    create table File (
+       id bigint not null auto_increment,
+        objectId tinyblob,
+        content varchar(255),
+        filename varchar(255),
+        primary key (id)
+    ) engine=InnoDB
+Hibernate: 
+    
+    create table FileReview (
+       id bigint not null auto_increment,
+        objectId tinyblob,
+        comment varchar(255),
+        lineNumber integer,
+        file_id bigint not null,
+        review_id bigint not null,
+        primary key (id)
+    ) engine=InnoDB
+Hibernate: 
+    
+    create table Review (
+       id bigint not null auto_increment,
+        objectId tinyblob,
+        branch_id bigint,
+        user_id bigint,
+        primary key (id)
+    ) engine=InnoDB
+Hibernate: 
+    
+    create table Review_FileReview (
+       Review_id bigint not null,
+        fileReviewList_id bigint not null
+    ) engine=InnoDB
+Hibernate: 
+    
+    create table Tag (
+       id bigint not null auto_increment,
+        objectId tinyblob,
+        commitHash varchar(255),
+        name varchar(255),
+        commit_id bigint,
+        primary key (id)
+    ) engine=InnoDB
+Hibernate: 
+    
+    create table User (
+       id bigint not null auto_increment,
+        objectId tinyblob,
+        email varchar(255),
+        name varchar(255),
+        primary key (id)
+    ) engine=InnoDB
+Hibernate: 
+    
+    alter table Commit_File 
+       add constraint UK_ls7afag4402w8c7l3uq6ca3ps unique (files_id)
+Hibernate: 
+    
+    alter table FileReview 
+       add constraint UK_hhpi8lsmo3cmrj8vwt9fvqv7i unique (file_id)
+Hibernate: 
+    
+    alter table FileReview 
+       add constraint UK_18mw1t9pln7hk2dj7taco38wr unique (review_id)
+Hibernate: 
+    
+    alter table Review_FileReview 
+       add constraint UK_eoi1iwbms9k42u4gvbenmn3tf unique (fileReviewList_id)
+Hibernate: 
+    
+    alter table Commit 
+       add constraint FK1yo3fl6me7ttfnbb2b6fuiro 
+       foreign key (author_id) 
+       references User (id)
+Hibernate: 
+    
+    alter table Commit 
+       add constraint FKkakjjvq54uid1mbwxkpqgfo1h 
+       foreign key (branch_id) 
+       references Branch (id)
+Hibernate: 
+    
+    alter table Commit_File 
+       add constraint FK5bktr2h3jhqtdti8lnib2jga9 
+       foreign key (files_id) 
+       references File (id)
+Hibernate: 
+    
+    alter table Commit_File 
+       add constraint FK6gdqnp1613irqiwnma4rg6glw 
+       foreign key (Commit_id) 
+       references Commit (id)
+Hibernate: 
+    
+    alter table FileReview 
+       add constraint FKrg9sbt9lspdg20vaohwpn78ng 
+       foreign key (file_id) 
+       references File (id)
+Hibernate: 
+    
+    alter table FileReview 
+       add constraint FKqljnajx6rrdr2n7fu5crnsqh0 
+       foreign key (review_id) 
+       references Review (id)
+Hibernate: 
+    
+    alter table Review 
+       add constraint FK7rbnplhy7oaulxrkp8cqeablj 
+       foreign key (branch_id) 
+       references Branch (id)
+Hibernate: 
+    
+    alter table Review 
+       add constraint FK32wkapjkt9btb8hltm215d54g 
+       foreign key (user_id) 
+       references User (id)
+Hibernate: 
+    
+    alter table Review_FileReview 
+       add constraint FKht9uruqpo9qc4garca1hpxrk4 
+       foreign key (fileReviewList_id) 
+       references FileReview (id)
+Hibernate: 
+    
+    alter table Review_FileReview 
+       add constraint FK1631fwvonh2g6vh2ek5pn8kjh 
+       foreign key (Review_id) 
+       references Review (id)
+Hibernate: 
+    
+    alter table Tag 
+       add constraint FKam2m3lciyt0weg8k2ty8ygm3g 
+       foreign key (commit_id) 
+       references Commit (id)
+]]></system-out>
+    <system-err><![CDATA[Fri Jun 28 14:19:59 ART 2019 WARN: Establishing SSL connection without server's identity verification is not recommended. According to MySQL 5.5.45+, 5.6.26+ and 5.7.6+ requirements SSL connection must be established by default if explicit option isn't set. For compliance with existing applications not using SSL the verifyServerCertificate property is set to 'false'. You need either to explicitly disable SSL by setting useSSL=false, or set useSSL=true and provide truststore for server certificate verification.
+Fri Jun 28 14:19:59 ART 2019 WARN: Establishing SSL connection without server's identity verification is not recommended. According to MySQL 5.5.45+, 5.6.26+ and 5.7.6+ requirements SSL connection must be established by default if explicit option isn't set. For compliance with existing applications not using SSL the verifyServerCertificate property is set to 'false'. You need either to explicitly disable SSL by setting useSSL=false, or set useSSL=true and provide truststore for server certificate verification.
+]]></system-err>
+  </testcase>
+  <testcase name="testCreateTag" classname="ar.edu.unlp.info.bd2.services.HibernateBithubTestCase" time="0.003">
+    <error message="Failed to load ApplicationContext" type="java.lang.IllegalStateException">java.lang.IllegalStateException: Failed to load ApplicationContext
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'hibernateService' defined in ar.edu.unlp.info.bd2.config.HibernateConfiguration: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [ar.edu.unlp.info.bd2.services.BithubService]: Factory method 'hibernateService' threw exception; nested exception is java.lang.IllegalStateException: @Bean method HibernateConfiguration.createRepository called as bean reference for type [ar.edu.unlp.info.bd2.repositories.HibernateBithubRepository] but overridden by non-compatible bean instance of type [com.sun.proxy.$Proxy46]. Overriding bean of same name declared in: ar.edu.unlp.info.bd2.config.HibernateConfiguration
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [ar.edu.unlp.info.bd2.services.BithubService]: Factory method 'hibernateService' threw exception; nested exception is java.lang.IllegalStateException: @Bean method HibernateConfiguration.createRepository called as bean reference for type [ar.edu.unlp.info.bd2.repositories.HibernateBithubRepository] but overridden by non-compatible bean instance of type [com.sun.proxy.$Proxy46]. Overriding bean of same name declared in: ar.edu.unlp.info.bd2.config.HibernateConfiguration
+Caused by: java.lang.IllegalStateException: @Bean method HibernateConfiguration.createRepository called as bean reference for type [ar.edu.unlp.info.bd2.repositories.HibernateBithubRepository] but overridden by non-compatible bean instance of type [com.sun.proxy.$Proxy46]. Overriding bean of same name declared in: ar.edu.unlp.info.bd2.config.HibernateConfiguration
+</error>
+    <system-out><![CDATA[Hibernate: 
+    
+    alter table Commit 
+       drop 
+       foreign key FK1yo3fl6me7ttfnbb2b6fuiro
+Hibernate: 
+    
+    alter table Commit 
+       drop 
+       foreign key FKkakjjvq54uid1mbwxkpqgfo1h
+Hibernate: 
+    
+    alter table Commit_File 
+       drop 
+       foreign key FK5bktr2h3jhqtdti8lnib2jga9
+Hibernate: 
+    
+    alter table Commit_File 
+       drop 
+       foreign key FK6gdqnp1613irqiwnma4rg6glw
+Hibernate: 
+    
+    alter table FileReview 
+       drop 
+       foreign key FKrg9sbt9lspdg20vaohwpn78ng
+Hibernate: 
+    
+    alter table FileReview 
+       drop 
+       foreign key FKqljnajx6rrdr2n7fu5crnsqh0
+Hibernate: 
+    
+    alter table Review 
+       drop 
+       foreign key FK7rbnplhy7oaulxrkp8cqeablj
+Hibernate: 
+    
+    alter table Review 
+       drop 
+       foreign key FK32wkapjkt9btb8hltm215d54g
+Hibernate: 
+    
+    alter table Review_FileReview 
+       drop 
+       foreign key FKht9uruqpo9qc4garca1hpxrk4
+Hibernate: 
+    
+    alter table Review_FileReview 
+       drop 
+       foreign key FK1631fwvonh2g6vh2ek5pn8kjh
+Hibernate: 
+    
+    alter table Tag 
+       drop 
+       foreign key FKam2m3lciyt0weg8k2ty8ygm3g
+Hibernate: 
+    
+    drop table if exists Branch
+Hibernate: 
+    
+    drop table if exists Commit
+Hibernate: 
+    
+    drop table if exists Commit_File
+Hibernate: 
+    
+    drop table if exists File
+Hibernate: 
+    
+    drop table if exists FileReview
+Hibernate: 
+    
+    drop table if exists Review
+Hibernate: 
+    
+    drop table if exists Review_FileReview
+Hibernate: 
+    
+    drop table if exists Tag
+Hibernate: 
+    
+    drop table if exists User
+Hibernate: 
+    
+    create table Branch (
+       id bigint not null auto_increment,
+        objectId tinyblob,
+        name varchar(255),
+        primary key (id)
+    ) engine=InnoDB
+Hibernate: 
+    
+    create table Commit (
+       id bigint not null auto_increment,
+        objectId tinyblob,
+        hash varchar(255),
+        message varchar(255),
+        author_id bigint,
+        branch_id bigint,
+        primary key (id)
+    ) engine=InnoDB
+Hibernate: 
+    
+    create table Commit_File (
+       Commit_id bigint not null,
+        files_id bigint not null
+    ) engine=InnoDB
+Hibernate: 
+    
+    create table File (
+       id bigint not null auto_increment,
+        objectId tinyblob,
+        content varchar(255),
+        filename varchar(255),
+        primary key (id)
+    ) engine=InnoDB
+Hibernate: 
+    
+    create table FileReview (
+       id bigint not null auto_increment,
+        objectId tinyblob,
+        comment varchar(255),
+        lineNumber integer,
+        file_id bigint not null,
+        review_id bigint not null,
+        primary key (id)
+    ) engine=InnoDB
+Hibernate: 
+    
+    create table Review (
+       id bigint not null auto_increment,
+        objectId tinyblob,
+        branch_id bigint,
+        user_id bigint,
+        primary key (id)
+    ) engine=InnoDB
+Hibernate: 
+    
+    create table Review_FileReview (
+       Review_id bigint not null,
+        fileReviewList_id bigint not null
+    ) engine=InnoDB
+Hibernate: 
+    
+    create table Tag (
+       id bigint not null auto_increment,
+        objectId tinyblob,
+        commitHash varchar(255),
+        name varchar(255),
+        commit_id bigint,
+        primary key (id)
+    ) engine=InnoDB
+Hibernate: 
+    
+    create table User (
+       id bigint not null auto_increment,
+        objectId tinyblob,
+        email varchar(255),
+        name varchar(255),
+        primary key (id)
+    ) engine=InnoDB
+Hibernate: 
+    
+    alter table Commit_File 
+       add constraint UK_ls7afag4402w8c7l3uq6ca3ps unique (files_id)
+Hibernate: 
+    
+    alter table FileReview 
+       add constraint UK_hhpi8lsmo3cmrj8vwt9fvqv7i unique (file_id)
+Hibernate: 
+    
+    alter table FileReview 
+       add constraint UK_18mw1t9pln7hk2dj7taco38wr unique (review_id)
+Hibernate: 
+    
+    alter table Review_FileReview 
+       add constraint UK_eoi1iwbms9k42u4gvbenmn3tf unique (fileReviewList_id)
+Hibernate: 
+    
+    alter table Commit 
+       add constraint FK1yo3fl6me7ttfnbb2b6fuiro 
+       foreign key (author_id) 
+       references User (id)
+Hibernate: 
+    
+    alter table Commit 
+       add constraint FKkakjjvq54uid1mbwxkpqgfo1h 
+       foreign key (branch_id) 
+       references Branch (id)
+Hibernate: 
+    
+    alter table Commit_File 
+       add constraint FK5bktr2h3jhqtdti8lnib2jga9 
+       foreign key (files_id) 
+       references File (id)
+Hibernate: 
+    
+    alter table Commit_File 
+       add constraint FK6gdqnp1613irqiwnma4rg6glw 
+       foreign key (Commit_id) 
+       references Commit (id)
+Hibernate: 
+    
+    alter table FileReview 
+       add constraint FKrg9sbt9lspdg20vaohwpn78ng 
+       foreign key (file_id) 
+       references File (id)
+Hibernate: 
+    
+    alter table FileReview 
+       add constraint FKqljnajx6rrdr2n7fu5crnsqh0 
+       foreign key (review_id) 
+       references Review (id)
+Hibernate: 
+    
+    alter table Review 
+       add constraint FK7rbnplhy7oaulxrkp8cqeablj 
+       foreign key (branch_id) 
+       references Branch (id)
+Hibernate: 
+    
+    alter table Review 
+       add constraint FK32wkapjkt9btb8hltm215d54g 
+       foreign key (user_id) 
+       references User (id)
+Hibernate: 
+    
+    alter table Review_FileReview 
+       add constraint FKht9uruqpo9qc4garca1hpxrk4 
+       foreign key (fileReviewList_id) 
+       references FileReview (id)
+Hibernate: 
+    
+    alter table Review_FileReview 
+       add constraint FK1631fwvonh2g6vh2ek5pn8kjh 
+       foreign key (Review_id) 
+       references Review (id)
+Hibernate: 
+    
+    alter table Tag 
+       add constraint FKam2m3lciyt0weg8k2ty8ygm3g 
+       foreign key (commit_id) 
+       references Commit (id)
+]]></system-out>
+    <system-err><![CDATA[Fri Jun 28 14:20:03 ART 2019 WARN: Establishing SSL connection without server's identity verification is not recommended. According to MySQL 5.5.45+, 5.6.26+ and 5.7.6+ requirements SSL connection must be established by default if explicit option isn't set. For compliance with existing applications not using SSL the verifyServerCertificate property is set to 'false'. You need either to explicitly disable SSL by setting useSSL=false, or set useSSL=true and provide truststore for server certificate verification.
+Fri Jun 28 14:20:03 ART 2019 WARN: Establishing SSL connection without server's identity verification is not recommended. According to MySQL 5.5.45+, 5.6.26+ and 5.7.6+ requirements SSL connection must be established by default if explicit option isn't set. For compliance with existing applications not using SSL the verifyServerCertificate property is set to 'false'. You need either to explicitly disable SSL by setting useSSL=false, or set useSSL=true and provide truststore for server certificate verification.
+]]></system-err>
+  </testcase>
+  <testcase name="testGetTotalNumberOfCommitsPerUser" classname="ar.edu.unlp.info.bd2.services.HibernateBithubTestCase" time="0">
+    <error message="Failed to load ApplicationContext" type="java.lang.IllegalStateException">java.lang.IllegalStateException: Failed to load ApplicationContext
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'hibernateService' defined in ar.edu.unlp.info.bd2.config.HibernateConfiguration: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [ar.edu.unlp.info.bd2.services.BithubService]: Factory method 'hibernateService' threw exception; nested exception is java.lang.IllegalStateException: @Bean method HibernateConfiguration.createRepository called as bean reference for type [ar.edu.unlp.info.bd2.repositories.HibernateBithubRepository] but overridden by non-compatible bean instance of type [com.sun.proxy.$Proxy46]. Overriding bean of same name declared in: ar.edu.unlp.info.bd2.config.HibernateConfiguration
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [ar.edu.unlp.info.bd2.services.BithubService]: Factory method 'hibernateService' threw exception; nested exception is java.lang.IllegalStateException: @Bean method HibernateConfiguration.createRepository called as bean reference for type [ar.edu.unlp.info.bd2.repositories.HibernateBithubRepository] but overridden by non-compatible bean instance of type [com.sun.proxy.$Proxy46]. Overriding bean of same name declared in: ar.edu.unlp.info.bd2.config.HibernateConfiguration
+Caused by: java.lang.IllegalStateException: @Bean method HibernateConfiguration.createRepository called as bean reference for type [ar.edu.unlp.info.bd2.repositories.HibernateBithubRepository] but overridden by non-compatible bean instance of type [com.sun.proxy.$Proxy46]. Overriding bean of same name declared in: ar.edu.unlp.info.bd2.config.HibernateConfiguration
+</error>
+    <system-out><![CDATA[Hibernate: 
+    
+    alter table Commit 
+       drop 
+       foreign key FK1yo3fl6me7ttfnbb2b6fuiro
+Hibernate: 
+    
+    alter table Commit 
+       drop 
+       foreign key FKkakjjvq54uid1mbwxkpqgfo1h
+Hibernate: 
+    
+    alter table Commit_File 
+       drop 
+       foreign key FK5bktr2h3jhqtdti8lnib2jga9
+Hibernate: 
+    
+    alter table Commit_File 
+       drop 
+       foreign key FK6gdqnp1613irqiwnma4rg6glw
+Hibernate: 
+    
+    alter table FileReview 
+       drop 
+       foreign key FKrg9sbt9lspdg20vaohwpn78ng
+Hibernate: 
+    
+    alter table FileReview 
+       drop 
+       foreign key FKqljnajx6rrdr2n7fu5crnsqh0
+Hibernate: 
+    
+    alter table Review 
+       drop 
+       foreign key FK7rbnplhy7oaulxrkp8cqeablj
+Hibernate: 
+    
+    alter table Review 
+       drop 
+       foreign key FK32wkapjkt9btb8hltm215d54g
+Hibernate: 
+    
+    alter table Review_FileReview 
+       drop 
+       foreign key FKht9uruqpo9qc4garca1hpxrk4
+Hibernate: 
+    
+    alter table Review_FileReview 
+       drop 
+       foreign key FK1631fwvonh2g6vh2ek5pn8kjh
+Hibernate: 
+    
+    alter table Tag 
+       drop 
+       foreign key FKam2m3lciyt0weg8k2ty8ygm3g
+Hibernate: 
+    
+    drop table if exists Branch
+Hibernate: 
+    
+    drop table if exists Commit
+Hibernate: 
+    
+    drop table if exists Commit_File
+Hibernate: 
+    
+    drop table if exists File
+Hibernate: 
+    
+    drop table if exists FileReview
+Hibernate: 
+    
+    drop table if exists Review
+Hibernate: 
+    
+    drop table if exists Review_FileReview
+Hibernate: 
+    
+    drop table if exists Tag
+Hibernate: 
+    
+    drop table if exists User
+Hibernate: 
+    
+    create table Branch (
+       id bigint not null auto_increment,
+        objectId tinyblob,
+        name varchar(255),
+        primary key (id)
+    ) engine=InnoDB
+Hibernate: 
+    
+    create table Commit (
+       id bigint not null auto_increment,
+        objectId tinyblob,
+        hash varchar(255),
+        message varchar(255),
+        author_id bigint,
+        branch_id bigint,
+        primary key (id)
+    ) engine=InnoDB
+Hibernate: 
+    
+    create table Commit_File (
+       Commit_id bigint not null,
+        files_id bigint not null
+    ) engine=InnoDB
+Hibernate: 
+    
+    create table File (
+       id bigint not null auto_increment,
+        objectId tinyblob,
+        content varchar(255),
+        filename varchar(255),
+        primary key (id)
+    ) engine=InnoDB
+Hibernate: 
+    
+    create table FileReview (
+       id bigint not null auto_increment,
+        objectId tinyblob,
+        comment varchar(255),
+        lineNumber integer,
+        file_id bigint not null,
+        review_id bigint not null,
+        primary key (id)
+    ) engine=InnoDB
+Hibernate: 
+    
+    create table Review (
+       id bigint not null auto_increment,
+        objectId tinyblob,
+        branch_id bigint,
+        user_id bigint,
+        primary key (id)
+    ) engine=InnoDB
+Hibernate: 
+    
+    create table Review_FileReview (
+       Review_id bigint not null,
+        fileReviewList_id bigint not null
+    ) engine=InnoDB
+Hibernate: 
+    
+    create table Tag (
+       id bigint not null auto_increment,
+        objectId tinyblob,
+        commitHash varchar(255),
+        name varchar(255),
+        commit_id bigint,
+        primary key (id)
+    ) engine=InnoDB
+Hibernate: 
+    
+    create table User (
+       id bigint not null auto_increment,
+        objectId tinyblob,
+        email varchar(255),
+        name varchar(255),
+        primary key (id)
+    ) engine=InnoDB
+Hibernate: 
+    
+    alter table Commit_File 
+       add constraint UK_ls7afag4402w8c7l3uq6ca3ps unique (files_id)
+Hibernate: 
+    
+    alter table FileReview 
+       add constraint UK_hhpi8lsmo3cmrj8vwt9fvqv7i unique (file_id)
+Hibernate: 
+    
+    alter table FileReview 
+       add constraint UK_18mw1t9pln7hk2dj7taco38wr unique (review_id)
+Hibernate: 
+    
+    alter table Review_FileReview 
+       add constraint UK_eoi1iwbms9k42u4gvbenmn3tf unique (fileReviewList_id)
+Hibernate: 
+    
+    alter table Commit 
+       add constraint FK1yo3fl6me7ttfnbb2b6fuiro 
+       foreign key (author_id) 
+       references User (id)
+Hibernate: 
+    
+    alter table Commit 
+       add constraint FKkakjjvq54uid1mbwxkpqgfo1h 
+       foreign key (branch_id) 
+       references Branch (id)
+Hibernate: 
+    
+    alter table Commit_File 
+       add constraint FK5bktr2h3jhqtdti8lnib2jga9 
+       foreign key (files_id) 
+       references File (id)
+Hibernate: 
+    
+    alter table Commit_File 
+       add constraint FK6gdqnp1613irqiwnma4rg6glw 
+       foreign key (Commit_id) 
+       references Commit (id)
+Hibernate: 
+    
+    alter table FileReview 
+       add constraint FKrg9sbt9lspdg20vaohwpn78ng 
+       foreign key (file_id) 
+       references File (id)
+Hibernate: 
+    
+    alter table FileReview 
+       add constraint FKqljnajx6rrdr2n7fu5crnsqh0 
+       foreign key (review_id) 
+       references Review (id)
+Hibernate: 
+    
+    alter table Review 
+       add constraint FK7rbnplhy7oaulxrkp8cqeablj 
+       foreign key (branch_id) 
+       references Branch (id)
+Hibernate: 
+    
+    alter table Review 
+       add constraint FK32wkapjkt9btb8hltm215d54g 
+       foreign key (user_id) 
+       references User (id)
+Hibernate: 
+    
+    alter table Review_FileReview 
+       add constraint FKht9uruqpo9qc4garca1hpxrk4 
+       foreign key (fileReviewList_id) 
+       references FileReview (id)
+Hibernate: 
+    
+    alter table Review_FileReview 
+       add constraint FK1631fwvonh2g6vh2ek5pn8kjh 
+       foreign key (Review_id) 
+       references Review (id)
+Hibernate: 
+    
+    alter table Tag 
+       add constraint FKam2m3lciyt0weg8k2ty8ygm3g 
+       foreign key (commit_id) 
+       references Commit (id)
+]]></system-out>
+    <system-err><![CDATA[Fri Jun 28 14:20:06 ART 2019 WARN: Establishing SSL connection without server's identity verification is not recommended. According to MySQL 5.5.45+, 5.6.26+ and 5.7.6+ requirements SSL connection must be established by default if explicit option isn't set. For compliance with existing applications not using SSL the verifyServerCertificate property is set to 'false'. You need either to explicitly disable SSL by setting useSSL=false, or set useSSL=true and provide truststore for server certificate verification.
+Fri Jun 28 14:20:06 ART 2019 WARN: Establishing SSL connection without server's identity verification is not recommended. According to MySQL 5.5.45+, 5.6.26+ and 5.7.6+ requirements SSL connection must be established by default if explicit option isn't set. For compliance with existing applications not using SSL the verifyServerCertificate property is set to 'false'. You need either to explicitly disable SSL by setting useSSL=false, or set useSSL=true and provide truststore for server certificate verification.
+]]></system-err>
+  </testcase>
+</testsuite>
